@@ -32,6 +32,9 @@
         <td>
           <%= link_to "edit", edit_event_path(event) %>
         </td>
+        <td>
+          <%= link_to "delete", event_path(event), method: :delete, data: {confirm: true} %>
+        </td>
       </tr>
     <% end %>
   </tbody>
